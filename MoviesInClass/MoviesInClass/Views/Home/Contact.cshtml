@@ -1,0 +1,16 @@
+﻿@model MoviesInClass.Rental
+
+@{
+    ViewBag.Title = "Movie Stuff";
+}
+<h2>@ViewBag.Title.</h2>
+
+<p>The Disk ID is @Model.DiskID</p>
+
+<p>The Checkout Date was @Model.CheckOutDate.ToShortDateString()</p>
+
+<p>The customer that rented this was @Model.Customer.FirstName @Model.Customer.LastName</p>
+
+<p>The name of the movie is @Model.Inventory.Movy.MovieName</p>
+
+

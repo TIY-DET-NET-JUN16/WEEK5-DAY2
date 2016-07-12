@@ -1,0 +1,14 @@
+﻿@model Inventory
+
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>The Name of the Movie is @Model.Movy.MovieName</p>
+
+@foreach(Rental rent in Model.Rentals)
+{
+    <p>Rental Date: @rent.CheckOutDate.ToShortDateString()</p>
+}
